@@ -10,15 +10,13 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @theme {
   --breakpoint-sm: 350px;
+
+  --shadow-cyanMd: 10px 10px 200px 150px rgba(94, 206, 220, 0.5);
+  --shadow-orangeMd: 10px 10px 200px 150px rgba(240, 169, 79, 0.5);
 
   --color-brown: #53423e;
   --color-lightBrown: #645550;
