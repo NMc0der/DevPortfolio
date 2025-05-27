@@ -10,6 +10,8 @@ import sassLogo from "../../logos/icons8-sass-512.png";
 import tailwindLogo from "../../logos/icons8-tailwind-css-480.png";
 import nextjsLogo from "../../logos/icons8-nextjs-480.png";
 // import nextjsLogo2 from "../../logos/icons8-nextjs-240.png"
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/varients";
 
 const skills = [
   {
@@ -52,12 +54,19 @@ const AllSkills = () => {
       <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
         {skills.map((item, index) => {
           return (
-            <SingleSkill
-              key={index}
-              text={item.skill}
-              imgSvg={item.icon}
-              color={item.color}
-            />
+            <motion.div
+              variants={fadeIn("up", `0.${index}`)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0 }}
+            >
+              <SingleSkill
+                key={index}
+                text={item.skill}
+                imgSvg={item.icon}
+                color={item.color}
+              />
+            </motion.div>
           );
         })}
       </div>
