@@ -24,7 +24,6 @@ function App() {
       <ProjectMain />
       <ContactMain />
       <FooterMain />
-      <HelperSection />
     </main>
   );
 }
