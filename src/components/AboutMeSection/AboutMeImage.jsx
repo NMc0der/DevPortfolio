@@ -10,7 +10,7 @@ const AboutMeImage = () => {
           alt="about-me-image"
         />
       </div>
-      <div className=" h-[500px] w-[250px] bg-orange absolute bottom-[-30px] left-[-30px] rounded-bl-[120px] rounded-tr-[120px] rounded-br-[20px] rounded-tl-[20px]"></div>
+      <div className=" h-[500px] w-[250px] bg-cyan absolute bottom-[-30px] left-[-30px] rounded-bl-[120px] rounded-tr-[120px] rounded-br-[20px] rounded-tl-[20px]"></div>
     </div>
   );
 };

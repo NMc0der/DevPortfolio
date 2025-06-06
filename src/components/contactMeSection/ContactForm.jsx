@@ -60,7 +60,7 @@ const ContactForm = () => {
           id=""
           placeholder="Your Name"
           required
-          className="h-12 rounded-lg bg-lightBrown px-2"
+          className="h-12 rounded-lg bg-[#547792] px-2"
         />
         <input
           type="email"
@@ -68,7 +68,7 @@ const ContactForm = () => {
           id=""
           placeholder="Your Email"
           required
-          className="h-12 rounded-lg bg-lightBrown px-2"
+          className="h-12 rounded-lg bg-[#547792] px-2"
         />
         <textarea
           name="message"
@@ -77,7 +77,7 @@ const ContactForm = () => {
           rows={9}
           cols={50}
           required
-          className=" rounded-lg bg-lightBrown p-2"
+          className=" rounded-lg bg-[#547792] p-2"
         ></textarea>
         <button
           type="submit"

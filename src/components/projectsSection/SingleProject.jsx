@@ -28,18 +28,16 @@ const SingleProject = ({
       } justify-end`}
     >
       <div>
-        <h2 className="md:text-3xl sm:text-2xl text-orange">{name}</h2>
+        <h2 className="md:text-3xl sm:text-2xl text-cyan">{name}</h2>
         <h2
-          className={` text-xl font-thin text-white font-special sm:text-center ${
+          className={` lg:text-xl  font-thin text-white font-special sm:text-center mt-5 ${
             align === "left" ? "md:text-right" : "md:text-left"
           }`}
         >
           {description}
         </h2>
-        {/* (e) => {
-            console.log(`${link}`);
-          } */}
-        <a
+
+        {/* <a
           onClick={() => openUrl(link)}
           href={"/"}
           className={`text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${
@@ -47,17 +45,17 @@ const SingleProject = ({
           }`}
         >
           View
-        </a>
-        <div className="flex gap-2">
+        </a> */}
+        <div className="flex gap-4 mt-5">
           <button
             onClick={() => openUrl(link)}
-            className=" flex items-center gap-1 border-red border-4 rounded-full p-1"
+            className=" flex items-center gap-1 border-red border-2 cursor-pointer rounded-full p-2 hover:scale-110 transition-all duration-500"
           >
             Live Demo <BiSolidRightTopArrowCircle />
           </button>
           <button
             onClick={() => openUrl(gitLink)}
-            className="flex items-center gap-1 border-red border-4 rounded-full p-1"
+            className="flex items-center gap-1 border-red border-2 cursor-pointer rounded-full p-2 hover:scale-110 transition-all duration-500"
           >
             Github
             <FaGithub />
@@ -66,7 +64,7 @@ const SingleProject = ({
       </div>
       <div
         onClick={() => openUrl(link)}
-        className=" cursor-pointer max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 relative border border-white "
+        className=" cursor-pointer  max-h-[220px] max-w-[400px]  rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 relative border border-white "
       >
         <div></div>
         <img src={image} alt="project-image" className="w-full h-full " />

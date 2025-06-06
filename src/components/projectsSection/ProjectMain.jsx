@@ -3,7 +3,7 @@ import ProjectText from "./ProjectText";
 import SingleProject from "./SingleProject";
 import ClothingProjectImg from "../../images/projectImages/ClothingProjectImg.png";
 import GymProjectImg from "../../images/projectImages/GymProjectImg.png";
-import YouTubeCloneImg from "../../images/projectImages/Screenshot.png";
+import YouTubeCloneImg from "../../images/projectImages/YoutubeClone.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/varients";
 
@@ -51,7 +51,7 @@ const ProjectMain = () => {
       >
         <ProjectText />
       </motion.div>
-      <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
+      <div className="flex flex-col gap-25 xl:gap-35 max-w-[1000px] p-2 mx-auto mt-12">
         {projects.map((item, index) => {
           return (
             <SingleProject
