@@ -26,18 +26,18 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm("service_u4oserh", "template_7kzmdmk", form.current, {
-    //     publicKey: "VPfm1WaMgIKuv0-NI",
-    //   })
-    //   .then(
-    //     () => {
-    //       console.log("SUCCESS!");
-    //     },
-    //     (error) => {
-    //       console.log("FAILED...", error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm("service_u4oserh", "template_7kzmdmk", form.current, {
+        publicKey: "VPfm1WaMgIKuv0-NI",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
 
     e.target.reset();
     SetSentMessage(true);
