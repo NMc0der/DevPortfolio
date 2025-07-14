@@ -29,7 +29,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0 }}
-        className="mt-10 font-bold text-lg "
+        className="mt-10 font-bold md:text-lg text-sm "
       >
         <Link
           to={"contact"}
